@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fakestore-ecommerce/static/css/main.bbcca70d.css",
+    "main.js": "/fakestore-ecommerce/static/js/main.670caf5e.js",
+    "static/media/woman_hero.png": "/fakestore-ecommerce/static/media/woman_hero.d109717db264ec684e97.png",
+    "static/media/bg_hero.svg": "/fakestore-ecommerce/static/media/bg_hero.5b3a28da99dfd198982f.svg",
+    "static/media/logo.svg": "/fakestore-ecommerce/static/media/logo.7740ae04391d2ede26528c55d3b0102f.svg",
+    "index.html": "/fakestore-ecommerce/index.html",
+    "main.bbcca70d.css.map": "/fakestore-ecommerce/static/css/main.bbcca70d.css.map",
+    "main.670caf5e.js.map": "/fakestore-ecommerce/static/js/main.670caf5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbcca70d.css",
+    "static/js/main.670caf5e.js"
+  ]
+}
