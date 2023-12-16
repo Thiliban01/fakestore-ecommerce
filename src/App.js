@@ -1,7 +1,39 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import ProductDetails from './pages/ProductDetails';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ProductProvider from './contexts/ProductContext';
+import SidebarProvider from './contexts/SidebarContext';
 
 const App = () => {
-  return <div className='overflow-hidden'>react app</div>;
+  return (
+    <div className='overflow-hidden'>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/product/:id' element={<ProductDetails />} />
+        </Routes>
+        <Sidebar />
+        <Footer />
+      </Router>
+    </div>
+  );
 };
 
-export default App;
+const AppWithProviders = () => {
+  return (
+    <SidebarProvider>
+      <ProductProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ProductProvider>
+    </SidebarProvider>
+  );
+};
+
+export default AppWithProviders;
